@@ -1,0 +1,85 @@
+@import 'variable';
+
+.foot-icon{
+    @media (min-width: $large) {
+        position: absolute;
+        transform: translateX(-50%);
+        left: 25%;
+        bottom: 5%;
+    }
+    i{
+        width: 36px;
+        text-align: center;
+    }
+}
+
+.my-login-con{
+    background-image: url("../img/login_bg_1.png");
+    background-position: center;
+    background-size: cover;
+    .my-login-L{
+        color: white;
+        background-color: rgba(0, 0, 0, 0.6);
+        .my-txt{
+            padding: 0 96px;
+        }
+    }
+    .my-login-R{
+        background-color: rgba(0, 0, 0, 0.6);
+        color: white;
+        padding: 0px;
+        @media (min-width: $small) {
+            padding: 0 64px;
+        }
+        @media (min-width: $large) {
+            background-color: #162446;
+        }
+        .logo-login{
+            height: 48px;
+            width: 175px;
+            @media (min-width: $small) {
+                height: 64px;
+                width: 234px;
+            }
+        }
+        .cir-icon-group{
+            .cir-outline{
+                width: 40px;
+                height: 40px;
+            }
+        }
+        .input-area{
+            width: 100%;
+            padding: 0 16px;
+            @media (min-width: $small) {
+                width: 66.67%;
+                padding: 0px;
+            }
+            input{
+                height: 60px;
+                width: 100%;
+                padding: 16px;
+                background-color: #000;
+                border-radius: 0;
+                border: 0;
+                font-weight: bold;
+            }
+            .link-style{
+                transition: 1s;
+                color: rgb(160, 160, 160);
+                &:hover{
+                    color: white;
+                    text-decoration: underline;
+                    cursor: pointer;
+                }
+            }
+            .my-sign-btn{
+                height: 60px;
+                font-size: 18px;
+                line-height: 42px;
+            }
+            
+        }
+
+    }
+}

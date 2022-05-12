@@ -1,0 +1,146 @@
+@import 'variable';
+
+.my-total-txt{
+    font-size: 14px;
+}
+.my-next-btn{
+    height: 48px;
+    line-height: 34px;
+}
+.my-small-txt{
+    font-size: 12px;
+}
+.my-light-txt{
+    color: #9CA3AF;
+}
+
+#cart-sec{
+    background-color: #d1d5db;
+    min-height: 100vh;
+    .my-cart-con{
+        background-color: $cart-bg;
+        padding: 40px;
+        border-radius: 10px;
+        max-width: $large;
+        width: 100%;
+        margin: auto;
+        @media (min-width: $small) {
+            width: $small;
+        }
+        @media (min-width: $midium) {
+            width: 100%;
+        }
+        @media (min-width: $large) {
+            width: $large;
+        }
+        .my-progress-box{
+            width: 25%;
+            > div:last-child{
+                font-size: 12px;
+                @media (min-width: $midium) {
+                    font-size: 16px;;
+                }
+            }
+
+            .my-num{
+                width: 40px;
+                height: 40px;
+                color: black;
+                background-color: white;
+            }
+            .my-num-act{
+                width: 40px;
+                height: 40px;
+                background-color: $num-green;
+                color: white;
+            }
+        }
+        .bar-container{
+            top: 40px;
+
+            .my-spacer{
+                width: 12.5%;
+            }
+            .my-bar-box{
+                padding: 0 28px;
+                .my-bar-outer{
+                    height: 8px;
+                    background-color: #e5e7eb;
+                    .my-bar-inner{
+                        background-color: $bar-green;
+                        width: 0;
+                    }
+                    .my-bar-inner-half{
+                        background-color: $bar-green;
+                        width: 33.33%;
+                    }
+                    .my-bar-inner-full{
+                        background-color: $bar-green;
+                        width: 100%;
+                    }
+                }
+            }
+            
+        }
+        
+        
+
+    }
+
+    .detail-area{
+        color: #374151;
+        hr{
+            margin-bottom: 0;
+            margin-top: 24px;
+        }
+        p{
+            margin-bottom: 0;
+        }
+        .img-detail{
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+        }
+
+        input{
+            width: 16px;
+            height: 22px;
+            padding: 0 8px;
+            margin: 0 8px;
+            border-radius: 3px;
+            border: 1px solid rgb(173, 173, 173);
+            background-color: #f3f4f6;
+            box-sizing: content-box;
+        }
+    }
+
+}
+
+.checkbox-area{
+    li{
+        font-size: 20px;
+        padding: 20px 0;
+        margin-left: 24px;
+        &:last-child{
+            padding-bottom: 44px;
+        }
+    }
+}
+.txtform-area{
+    .my-label-txt{
+        font-size: 20px;
+        padding: 4px;
+        margin-bottom: 0;
+    }
+    .my-placeholder-txt{
+        padding: 8px 20px;
+        background-color: $cart-bg;
+    }
+}
+.info-area{
+    padding: 20px 0;
+    td {
+        padding:20px 20px 20px 0;
+        font-size: 20px;
+    }
+}

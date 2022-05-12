@@ -1,0 +1,280 @@
+@import 'variable';
+
+*{
+    transition: 0.5s;
+}
+a {
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+.my-btn{
+    background-color: $main-color;
+    padding: 8px 24px;
+    &:active, &:focus{
+        background-color: $main-color;
+    }
+    &:hover{
+        background-color: $main-color-dark;
+    }
+}
+.my-hr{
+    background-color: $main-color;
+    width: 64px;
+    height: 4px;
+    border-radius: 2px;
+}
+.my-subtitle{
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+.card-tittle{
+    font-size: 18px;
+}
+
+.con-setting{
+    padding: 96px 20px;
+    min-height: 100vh;
+}
+.my-con-add{
+    width: 100%;
+    margin: auto;
+    @media (min-width: 992px) {
+        width: 66.67%;
+    }
+}
+.my-change-tittle{
+    font-size: 24px;
+    @media (min-width: $small) {
+        font-size: 30px;
+    }
+}
+
+nav {
+    padding: 16px !important;
+    @media (min-width: $midium) {
+        padding: 8px 24px !important;
+    }
+
+    .logo {
+        height: 45px;
+        @media (min-width: $midium) {
+            height: 60px;
+        }
+    }
+}
+
+.carousel-inner img {
+    height: calc(100vh - 92px);
+    object-fit: cover;
+}
+#gallery{
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        padding: 0px;
+    }
+    .my-gallery-txt{
+        margin-bottom: 80px;
+    }
+}
+
+#card-01 {
+    .cardimg {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 20px;
+    }
+    svg {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+#pricing td{
+    padding: 12px 16px;
+    text-align: left;
+    &:last-child{
+        padding: 12px 0px;
+    }
+}
+
+#card-02{
+    .my-hr{
+        width: 80px;
+    }
+    .my-card-02-txt{
+        @media (min-width: $midium) {
+            
+        }
+    }
+}
+#info-sec{
+    .my-info{
+        padding: 0px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    
+    .cardimg {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 30px;
+        flex-grow: 0;
+	    flex-shrink: 0;
+    }
+    svg {
+        width: 40px;
+        height: 40px;
+    }
+    @media (min-width: $midium) {
+        .cardimg {
+            width: 128px;
+            height: 128px;
+            margin-bottom: 0;
+            margin-right: 40px !important;
+        }
+        svg {
+            width: 64px;
+            height: 64px;
+        }
+    }
+}
+#buying{
+    .my-l-col{
+        img{
+            object-fit: cover;
+            height: 256px;
+            @media (min-width: $large) {
+                height: 100%;
+            }
+        }
+    }
+    .my-r-col{
+        @media (min-width: $large) {
+            padding-left: 40px;
+        }
+        p:first-child{
+            letter-spacing: 1px;
+        }
+        svg{
+            width: 16px;
+            padding-bottom: 3px;
+        }
+        .my-cir-btn{
+            width: 24px;
+            height: 24px;
+            padding: 0;
+            margin: auto 2px;
+            &:nth-child(4){
+                background-color: $main-color;
+                &:active{
+                  background-color: $main-color;
+                }
+            }
+        }
+        .my-heart-bg{
+            width: 40px;
+            height: 40px;
+            background-color: #e5e7eb;
+            color: #6b7280;
+        }
+    }
+}
+#maps{
+    position: relative;
+    .my-input-area{
+        box-sizing: content-box;
+        position: absolute;
+        transform: translateX(-50%);
+        left: 50%;
+        top: 18%;
+        z-index: 10;
+        width: 80%;
+        background-color: white;
+        padding: 32px;
+        border-radius: 10px;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+        .txt-last{
+            font-size: 12px;
+        }
+        textarea{
+            resize: none;
+        }
+        @media (min-width: $midium) {
+            transform: unset;
+            width: 300px;
+            left: unset;
+            right: 5%;
+            top: 18%;
+        }
+        @media (min-width: $large) {
+            width: 264px;
+        }
+        @media (min-width: $xxl) {
+            width: 350px;
+        }
+    }
+    iframe{
+        height: 90vh;
+    }
+}
+#sitemap{
+    .my-foot-con{
+        padding: 96px 20px;
+    }
+    .logo-2{
+        width: 40px;
+        height: 40px;
+    }
+    .my-footbox{
+        height: 168px;
+        width: 100%;
+        
+        p{
+            font-size: 14px;
+            margin-bottom: 12px;
+            width: 100%;
+            letter-spacing: 2px;
+        }
+        ul{
+            width: 100%;
+            margin-bottom: 40px;
+        }
+        
+        @media (min-width: $midium) {
+            width: 50%;
+        }
+        @media (min-width: $xl) {
+            width: 25%;
+        }
+    }
+    .my-box-R{
+        flex-grow: 1;
+        @media (min-width: $midium) {
+            padding-left: 80px;
+        }
+    }
+    .my-box-L{
+        width: 256px;
+        flex-shrink: 0;
+    }
+}
+#copyright{
+    i{
+        font-size: 18px;
+        width: 20px;
+        height: 20px;
+        margin: 3px;
+    }
+}
+.color-1 {
+    color: $main-color;
+}
+.bg-color-1 {
+    background-color: $sec-color;
+}
